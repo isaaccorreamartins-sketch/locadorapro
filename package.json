@@ -1,6 +1,6 @@
 {
   "name": "locadorapro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sistema de gestão para locadora de veículos",
   "main": "main.js",
   "author": "LocadoraPro",
@@ -45,8 +45,8 @@
     "publish": [
       {
         "provider": "github",
-        "owner": "SEU-USUARIO-GITHUB",
-        "repo": "SEU-REPOSITORIO",
+        "owner": "isaaccorreamartins-sketch",
+        "repo": "https://github.com/isaaccorreamartins-sketch/locadorapro",
         "releaseType": "release"
       }
     ]
