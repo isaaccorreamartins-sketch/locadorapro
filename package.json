@@ -1,6 +1,6 @@
 {
   "name": "locadorapro",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Sistema de gestão para locadora de veículos",
   "main": "main.js",
   "author": "LocadoraPro",
