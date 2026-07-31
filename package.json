@@ -1,0 +1,54 @@
+{
+  "name": "locadorapro",
+  "version": "1.0.0",
+  "description": "Sistema de gestão para locadora de veículos",
+  "main": "main.js",
+  "author": "LocadoraPro",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win",
+    "publish": "electron-builder --win --publish always"
+  },
+  "dependencies": {
+    "electron-updater": "^6.8.9"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.locadorapro.app",
+    "productName": "LocadoraPro",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "app/**/*"
+    ],
+    "win": {
+      "target": [
+        { "target": "nsis", "arch": ["x64"] }
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "LocadoraPro"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "SEU-USUARIO-GITHUB",
+        "repo": "SEU-REPOSITORIO",
+        "releaseType": "release"
+      }
+    ]
+  }
+}
